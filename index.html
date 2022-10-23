@@ -1,16 +1,16 @@
 <html>
     <head>
-    <script>
-        function startServer() {
-            fetch(
-                url = 'https://prod-32.northeurope.logic.azure.com:443/workflows/5c78b7f9c3074bfe812355ee17654731/triggers/manual/paths/invoke?api-version=2016-10-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=8jprozHi5_vtQ1bcniN-hfb5eleVs3keGoJDM2sbf80',
-                {
-                    method: 'POST',
-                    data: { 'Content-Type': 'application/json', body: '{}' }
-                }
-            ).then(_ => alert('zaraz się włączy :3'));
-        }
-    </script>
+        <script>
+            function startServer() {
+                fetch(
+                    url = 'https://prod-32.northeurope.logic.azure.com:443/workflows/5c78b7f9c3074bfe812355ee17654731/triggers/manual/paths/invoke?api-version=2016-10-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=8jprozHi5_vtQ1bcniN-hfb5eleVs3keGoJDM2sbf80',
+                    {
+                        method: 'POST',
+                        data: { 'Content-Type': 'application/json', body: '{}' }
+                    }
+                ).then(_ => alert('zaraz się włączy :3'));
+            }
+        </script>
     </head>
     <body>
         <button onclick="startServer()">
